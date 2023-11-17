@@ -1,11 +1,22 @@
-div {
-    background: lightcoral;
-    width: 250px;
-    height: 250px;
-    border: solid;
-    overflow: scroll;
+.container {
+    margin: 10px 0;
+    background-color: lightcoral;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-p{
-    text-indent: 10px;
+.item {
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+#container-01 {
+    flex-flow: row wrap;
+}
+
+#container-02 {
+    height: 300px;
+    flex-flow: column wrap;
 }
