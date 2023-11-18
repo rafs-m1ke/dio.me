@@ -7,46 +7,60 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div id="menu-logo">
+        <img src="assets/images/menu.png" alt="Menu hamburguer">
+        <img src="assets/images/youtube 1.png" alt="Youtub logo">
+      </div>
+      <div id="search">
+        <span id="search-field"></span>
+      </div>
+      <div id="me">
+        <img src="assets/images/video.png" alt="video">
+        <img src="assets/images/bell.png" alt="Notification">
+        <img id="profile-photo" src="assets/images/eu-perfil.jpg" alt="Foto de perfil">
+      </div>
+    </header>
     <main>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/_VrqfG1ezP0?si=vooWJ6C5OyLYBTH1"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-
-      <h1>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
-
-      <!-- Botões - finalizar e testar -->
-      <div id="channel-data">
-        <div id="channael">
-          <img src="assets/images/Channel Avatar.png" alt="Logo da DIO" />
-          <p><span>DIO</span><br>103 mil inscritos</p>
-          <button id="be-member">Seja membro</button>
-          <button id="subscribe">Inscrever-se</button>
+      <div id="main-content">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/_VrqfG1ezP0?si=vooWJ6C5OyLYBTH1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+  
+        <h1>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
+  
+        <!-- Botões - finalizar e testar -->
+        <div id="channel-data">
+          <div id="channael">
+            
+            <button id="be-member">Seja membro</button>
+            <button id="subscribe">Inscrever-se</button>
+          </div>
+          <div id="buttons">
+            <button id="like"><img src="assets/images/thumbs-up.png" alt="">2 mil</button>
+            <button id="dislike"><img src="assets/images/thumbs-down.png" alt="">Não gostei</button>
+            <button id="share"><img src="assets/images/share-2.png" alt="">Compartilhar</button>
+            <button id="save"><img src="assets/images/download.png" alt="">Download</button>
+          </div>
         </div>
-        <div id="buttons">
-          <button id="like"><img src="assets/images/thumbs-up.png" alt="">2 mil</button>
-          <button id="dislike"><img src="assets/images/thumbs-down.png" alt="">Não gostei</button>
-          <button id="share"><img src="assets/images/share-2.png" alt="">Compartilhar</button>
-          <button id="save"><img src="assets/images/download.png" alt="">Download</button>
+  
+        <!-- Descrição - OK -->
+        <div id="description">
+          <p id="desc-info">28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</p>
+          <p>
+            Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
+          </p>
         </div>
       </div>
-
-      <!-- Descrição - OK -->
-      <div id="description">
-        <p id="desc-info">28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</p>
-        <p>
-          Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
-        </p>
-      </div>
-    </main>
-    <aside>
+      <aside>
       
-    </aside>
+      </aside>
+    </main>
   </body>
 </html>
