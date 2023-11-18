@@ -33,21 +33,41 @@ header {
     align-items: center;
 }
 
+#search {
+    display: flex;
+
+    align-items: center;
+
+}
+
 #search-field {
-    width: 300px;
+    width: 500px;
     height: 36px;
     border: 1px solid #ccc;
     border-radius: 18px 0 0 18px;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#search-button {
+    width: 50px;
+    height: 36px;
+    border-radius: 0 18px 18px 0;
+    border: 1px solid #ccc;
     display: flex;
 }
 
-#search-button {
-    width: 36px;
-    height: 36px;
-    background-color: #ccc;
-    border-radius: 18px;
-    display: flex;
+#search img {
+    width: 24px;
+    height: 24px;
+    margin: 5px 10px;
+}
+
+#search-button:hover {
+    border: 1px solid #b1b0b0;
+    cursor: pointer;
 }
 
 #me {
@@ -96,18 +116,27 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    align-items: center;
 }
 
 #channel{
     display: flex;
     justify-content: start;
     flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
-#channel > img, p {
-    display: flex;
-    flex-direction: row;
+#channel span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -22px;
+}
+
+#channel p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: -22px;
 }
 
 #be-member {
@@ -118,6 +147,7 @@ h1 {
     padding: 5px;
     border: 1px solid #0000002b;
     border-radius: 18px;
+    font-weight: 500;
 }
 
 #be-member:hover {
@@ -142,10 +172,10 @@ h1 {
 
 #buttons {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    margin-bottom: 16px;
-    gap: 5%;
+
+    gap: 10px;
 
 }
 
@@ -168,6 +198,7 @@ button:hover {
     border-radius: 40px;
     display: flex;
     align-items: center;
+    font-weight: 500;
 
 }
 
@@ -193,9 +224,36 @@ button:hover {
 
 aside {
     display: flex;
-    background-color: black;
     width: 25vw;
     height: 500px;
-    padding: 20px 30px 0;
+    padding: 0 30px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recommended-videos {
+    display: flex;
     flex-direction: row;
+    gap: 16px;
+
+}
+
+.recommended-videos img {
+    width: 160px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.recommended-videos > div > p {
+    font-size: 12px;
+}
+
+.cname {
+    margin: 8px 0;
 }
