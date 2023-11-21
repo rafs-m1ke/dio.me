@@ -1,91 +1,36 @@
 .container {
-    border: 2px solid;
-    border-radius: 30px;
+    border: solid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
-    grid-template-rows: 50px 100px 200px;
-    margin-bottom: 20px;
+    height: 80vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+    gap: 15px;
+    align-content: space-evenly;
 }
 
-.item {
-    text-align: center;
-    border-radius: inherit;
-    background-color: orange;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.ana {
+    background-color: yellow;
 }
-
-.item-b {
-    border-radius: inherit;
-    text-align: center;
-    background-color: blue;
-    /* grid-column-start: 1;
-    grid-column-end: span 3; */
-
-    grid-column: 1 / span 3;
-
-    /* grid-row-start: 2;
-    grid-row-end: span 2; */
-
-    grid-row: 2 / span 2;
+.rebeca {
+    background-color: lightblue;
 }
-
-.container-b {
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, minmax(100px,100px));
-    margin-bottom: 20px;
+.pedro {
+    background-color: greenyellow;
 }
-
-.selected {
-    border-radius: inherit;
-    border: 1px solid;
-    padding-top: 40px;
-
-    background-color: lightgreen;
-    text-align: center;
-    grid-row: 2/ 3;
-    grid-column: 2 / 3;
+.andre {
+    background-color: palevioletred;
 }
-
-.item-c {
-    text-align: center;
-    padding-top: 40px;
-    border-radius: inherit;
-    border: 1px solid;
-    background-color: lightcoral;
+.alice {
+    background-color: aqua;
 }
-
-.container-c {
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
-    grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+.camila {
+    background-color: violet;
 }
-
-.selected-b {
-    border-radius: inherit;
-    text-align: center;
-    padding-top: 60px;
-    background-color: lightgreen;
-    border: 1px solid;
-
-    /* grid-row: 2 / 3;
-    grid-column: 3 / span 1; */
-
-    grid-column: segunda-linha-col / terceira-linha-col;
-    grid-row: linha-meio / linha-fim;
-
-
+.sofia {
+    background-color: greenyellow;
 }
-
-.item-d {
-    text-align: center;
-    padding-top: 60px;
-    border-radius: inherit;
-    background-color: lightcoral;
-    border: 1px solid;
+.kaio {
+    background-color: yellow;
+}
+.michele {
+    background-color: lightblue;
 }
