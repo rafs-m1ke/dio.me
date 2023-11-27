@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    background-image: url(../images/header-background.png);
+    background-size:cover;
+    padding: 70px 24px;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    color: white;
+    width: 50%;
+    margin-bottom: 24px;
+}
+
+header p {
+    color: white;
+    line-height: 1.5rem;
+    margin-bottom: 24px;
+}
+
+button#windows, #browser {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 16px 0;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+button#browser {
+    background-color: #23272A;
+    color: white;
+}
+
+/* Section 1 */
+
+section#first, #second, #third, #fourth {
+    padding: 40px 24px;
+}
+
+h2 {
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 27px 0;
+}
+
+/* Section 2 */
+
+section#second, #fourth {
+    background-color: #F6F6F6;
+}
+
+/* Section 4 */
+
+#fourth h2 {
+    width: 90%;
+    font-size: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+section > picture {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background-color: #23272A;
+    text-align: center;
+    padding: 44px 0;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url(../images/header-background-l.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+   
+}
