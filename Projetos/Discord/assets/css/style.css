@@ -88,11 +88,87 @@ footer {
 /* Media Query */
 
 @media screen and (min-width: 768px) {
+
+    main {
+        max-width: 80vw;
+        margin: auto;
+    }
     header {
+        min-height: 500px;
         background-image: url(../images/header-background-l.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        width: 30vw;
+        max-width: 600px;
+        margin: 60px auto 24px;
+    }
+
+    header p {
+        width: 50vw;
+        max-width: 1000px;
+        margin: 24px auto;
+    }
+
+    button#windows, #browser {
+        width: auto;
+        padding: 16px 32px;
+        display: inline;
+        margin: 16px 16px;
+    }
+
+    section > div {
+        width: 30%;
+        padding: 30px;
+    }
+
+    section > picture img {
+        width: 35vw;
+        margin: auto;
+    }
+
+
+
+    h2 {
+        width: 100%;
+        font-size: 2rem;
+        margin: 27px 0;
+    }
+
+    #first {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #fourth div {
+        width: 100%;
     }
    
 }
