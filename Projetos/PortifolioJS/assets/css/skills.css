@@ -1,0 +1,49 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills .tools ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .tools ul li img {
+    max-width: 50px;
+    margin: 0.5rem;
+}
+
+.tools h3, .personal h3 {
+    text-align: center;
+}
+
+
+.skills .personal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.personal ul li {
+    margin: 0 2rem;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}

@@ -1,0 +1,40 @@
+.portifolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portifolio li {
+    margin-bottom: 1.5rem;
+}
+
+.portifolio .projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.portifolio .projeto.github::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/github.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.portifolio a {
+    margin-left: 34px;
+    color: #fff;
+    text-decoration: none;
+}
