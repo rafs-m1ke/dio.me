@@ -11,7 +11,7 @@ function updateProfileData(profileData) {
 
     const phone = document.getElementById('profile.phone');
     phone.innerText = profileData.phone;
-    phone.href = `https://wa.me/55${profileData.phone}`;
+    phone.href = `https://wa.me/${profileData.phoneHref}`;
 
 
 
