@@ -1,5 +1,14 @@
+:root {
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
+
 main {
     margin-top: 5rem;
+}
+
+section {
+    scroll-margin-top: 6rem;
 }
 
 .btn {
@@ -34,4 +43,10 @@ main {
     height: 100%;
     background: linear-gradient(tansparent, rgb(31,31,31));
     position: absolute;
+}
+
+.card-menu-img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
