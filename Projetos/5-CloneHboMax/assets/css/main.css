@@ -144,6 +144,7 @@
     padding: 1rem 2.25rem;
     border-radius: 2rem;
     background-image: var(--divider-bg-color);
+    animation: wiggle 4s linear infinite;
   }
 
 
@@ -152,4 +153,34 @@
     margin: 0 auto;
     font-weight: 400;
     line-height: 1.5;
+  }
+
+
+
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    10% {
+      transform: rotate(-15deg);
+    }
+    15% {
+      transform: rotate(10deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    35% {
+      transform: rotate(10deg);
+    }
+    40%, 100% {
+      transform: rotate(0);
+    }
   }
