@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    width: 80vw;
+    height: 133px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+#cadastro, #entrar-facebook {
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+#login, #passwd, input[type="submit"] {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+input[type="submit"] {
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: .6rem;
+    margin: 1rem 0;
+}
+
+#entrar-facebook {
+    text-align: center;
+    color: #385185;
+}
+
+#entrar-facebook a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #385185;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#entrar-facebook a::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url(../sprites/face-ico.ico);
+    background-size: cover;
+}
+
+#entrar-facebook span {
+    font-size: .8rem;
+}

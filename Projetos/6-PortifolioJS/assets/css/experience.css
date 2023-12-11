@@ -1,0 +1,48 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience li {
+    margin-bottom: 1.5rem;
+}
+
+.experience .title, .experience .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.experience .date {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.experience .title.exercito::before, .experience .date::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/exercito.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.experience .date::before{
+    background-image: url('../img/icons/calendar.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.experience p {
+    margin-left: 1rem;
+}

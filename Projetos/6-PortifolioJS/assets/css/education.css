@@ -1,0 +1,42 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.education li {
+    margin-bottom: 1.5rem;
+}
+
+.education .title, .education .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.education .date::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/calendar.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.education .date {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.education p {
+    margin-left: 1rem;
+}
